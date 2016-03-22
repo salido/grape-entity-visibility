@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name     = "grape-entity-visibility"
-  s.version  = "0.1"
+  s.version  = "0.2"
   s.platform = Gem::Platform::RUBY
   s.homepage = "http://github.com/wyattisimo/grape-entity-visibility"
   s.summary  = "Provides a simple DSL for managing visibility hierarchies in grape entities."

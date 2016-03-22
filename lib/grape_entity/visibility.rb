@@ -10,7 +10,7 @@ module GrapeEntity
     #   visibility_hierarchy :minimal, :private
     #
     def visibility_hierarchy(*visibilities)
-      @visibilities = visibilities
+      @@visibilities = visibilities
     end
 
 
@@ -29,7 +29,7 @@ module GrapeEntity
     #   If options[:visibility] == :private then the exposures inside both blocks will be set.
     #
     def with_visibility(visibility)
-      visibilities = @visibilities
+      visibilities = @@visibilities
 
       visibility_condition = lambda do |obj, opts|
         if visibilities.is_a? Array
